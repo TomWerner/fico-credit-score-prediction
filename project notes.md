@@ -35,33 +35,33 @@ BC21 | Months since most recent bank card account opened | Impute mode | High va
 BC30 | percent of bank card accounts >50% of limit | Impute mean | **VERY TRICKY** Modes at 0, 50, 100  
 BC31 | percent of bank card accounts >75% of limit | Impute mean | **VERY TRICKY** Modes at 0, 50, 100  
 BC34 | Ratio - of bank card balance to high credit | Impute mode | Bimodal at two distinct points  
-BC35 | 
-BC36 | 
-BC98 | 
-PB20 | 
-PB21
-PB35
-RT20
-RT21
-RT34
-RT35
-RT36
-UR20
-UR21
-UR35
-DS21
-DS35
-G051
-G089
-G095
-G102
-S004
-S027
-S046
-S061
-S062
-S078
-S079
-AGE
+BC35 | Average balance of all bank card accounts| Impute mode | Single extremely common value  
+BC36 | Months since most recent bank card delinquency | Impute median | Skewed distribution  
+BC98 | totel open to buy on revolving bank card accounts | Impute mode | Single extremely common value  
+PB20 | Months since oldest premium bank card account opened | Impute median | Skewed distribution  
+PB21 | Months since latest premium bank card account opened | Impute median | Skewed distribution  
+PB35 | Average balance of all premium bank card accounts | Impute mode | Single extremely common value  
+RT20 | Months since oldest retail account opened | Impute median | Skewed distribution, two close modes  
+RT21 | Months since most recent retail account opened | Impute mode | Single extremely common value  
+RT34 | Ratio - retail balance to high credit | Impute mode | Single extremely common value  
+RT35 | Average balance of all retail accounts | Impute mode | Single extremely common value  
+RT36 | Months since most recent retail delinquency | Impute median | Skewed distribution  
+UR20 | Months since oldest upscale retail account opened | Impute median | Skewed distribution  
+UR21 | Months since recent upscale retail account opened | Impute median | Skewed distribution  
+UR35 | Average balance of upscale retail accounts | Impute mode | Single extremely common value  
+DS21 | Months since most recent department store account | Impute median | Skewed distribution  
+DS35 | Average balance of all department store accounts | Impute mode | Single extremely common value  
+G051 | Percent of accounts never delinquent | Impute median | Skewed distribution
+G089 | Highest delinquency ever on account | Impute mode | **VERY TRICKY** Either high or low
+G095 | Months since most recent derogatory public record | Impute median | Skewed distribution  
+G102 | Months since most recent inquiry | Impute median | Skewed distribution  
+S004 | Average number of months accounts on file | Impute median | Skewed distribution  
+S027 | Months since most recent financial account opened | Impute mode | Single extremely common value  
+S046 | Percent of active accounts with positive balance | Impute mode | Single extremely common value  
+S061 | Months since most recent 60+ day rating | Impute median | Skewed distribution  
+S062 | Months since most recent 90+ day rating | Impute median | Skewed distribution  
+S078 | Ratio - balance/high credit for personal finance trades verified in 12 months | Set 0 | **VERY TRICKY** two high values at 0 and 100
+S079 | Ratio - balance/high credit for department/clothing verified in 12 months | Impute mode | Single extremely common value  
+AGE | Calculated AGE from S002 | Impute median | Skewed distribution  
 
 
