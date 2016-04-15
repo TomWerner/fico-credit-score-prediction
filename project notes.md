@@ -1,7 +1,9 @@
 # FICO Credit Score Project
 ## Data Cleaning / Preprocessing
 ### Missing Data
-The dataset has a substantial number of features with missing values
+The dataset has a substantial number of features with missing values  
+
+
 Feature | Description | Action | Reason  
 --- | --- | --- | ---  
 AT20 | Months since oldest account opened | Impute median | Skewed distribution  
