@@ -82,7 +82,8 @@ Complexity | Average Class Error (Validation set)
 
 Based one these results, we chose a decision tree built with a complexity of .0003.
 
-This tree uses 44 variables,
+This tree uses 44 variables,  
+
 [ 1] AGE      AT10     AT29     BC13     BC29     FI01     G006     G009    
 [ 9] G017     G018     G020     G041     G042     G043     G057     G059    
 [17] G061     G065     G066     G093     G096     G098     G103     ICN_RE34
