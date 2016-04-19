@@ -64,4 +64,36 @@ S078 | Ratio - balance/high credit for personal finance trades verified in 12 mo
 S079 | Ratio - balance/high credit for department/clothing verified in 12 months | Impute mode | Single extremely common value  
 AGE | Calculated AGE from S002 | Impute median | Skewed distribution  
 
+### Business Case
+We only want to give loans to customers we feel confident will pay us back. To achieve this,
+we will deny loans to customers with a credit score of less than 650. We've coded this in our dataset appropriately.
+
+
+## Modeling
+### Decision Trees
+
+Complexity | Average Class Error (Validation set)
+--- | ---
+0 | .11
+.0001 | .10 
+.0002 | .10
+.0003 | .09
+.0004 | .10
+
+Based one these results, we chose a decision tree built with a complexity of .0003.
+
+This tree uses 44 variables,
+[ 1] AGE      AT10     AT29     BC13     BC29     FI01     G006     G009    
+[ 9] G017     G018     G020     G041     G042     G043     G057     G059    
+[17] G061     G065     G066     G093     G096     G098     G103     ICN_RE34
+[25] ICN_RE35 IMD_AT20 IMD_AT21 IMD_AT34 IMD_AT36 IMD_BC98 IMD_G051 IMD_G095
+[33] IMD_G102 IMD_RT36 IMD_S004 IMD_S061 IMD_S062 IMO_BC34 IMO_G089 INCOME  
+[41] RE28     S043     S059     S064 
+
+which is a significant pruning from the nearly 300 variables our dataset had.
+
+
+
+
+
 
